@@ -1,8 +1,9 @@
-package pages;
+package pages_buy_medicines_system;
 
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
@@ -53,15 +54,25 @@ public class HomePage {
 
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
+	    // ✅ Ensure page is loaded
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(
+	        By.tagName("body")
+	    ));
+
+	    // ✅ Scroll (important for stability)
 	    WebElement btn = wait.until(
-	        ExpectedConditions.elementToBeClickable(
+	        ExpectedConditions.presenceOfElementLocated(
 	            By.xpath("//a[contains(text(),'Buy Medicines')]")
 	        )
 	    );
 
+	    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", btn);
+
+	    wait.until(ExpectedConditions.elementToBeClickable(btn));
+
 	    btn.click();
 
-	    // ✅ WAIT FOR PAGE LOAD PROPERLY
+	    // ✅ Wait next page
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(
 	        By.xpath("//div[@data-placeholder='Search Medicines']")
 	    ));
@@ -71,25 +82,24 @@ public class HomePage {
 
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-	    // ✅ Step 1: Wait for search box container
 	    WebElement searchBox = wait.until(
 	        ExpectedConditions.elementToBeClickable(
 	            By.xpath("//div[@data-placeholder='Search Medicines']")
 	        )
 	    );
-
 	    searchBox.click();
 
-	    // ✅ Step 2: Wait for actual input field (after click)
 	    WebElement input = wait.until(
-	        ExpectedConditions.presenceOfElementLocated(
-	            By.xpath("//input[@placeholder='Search Medicines']")
+	        ExpectedConditions.elementToBeClickable(
+	            By.xpath("//input[contains(@placeholder,'Search')]")
 	        )
 	    );
 
 	    input.sendKeys(medicine);
-
 	    input.sendKeys(Keys.ENTER);
+
+	    // ✅ ONLY wait for URL change (MOST STABLE)
+	    wait.until(ExpectedConditions.urlContains("search"));
 	}
 	
 }

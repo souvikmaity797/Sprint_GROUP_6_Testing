@@ -1,9 +1,14 @@
-package pages;
+package pages_buy_medicines_system;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CartPage {
 	WebDriver driver;
@@ -13,7 +18,7 @@ public class CartPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//span[@class=\"icon-ic-down_arrow  MedicineProductCard_arrowIcon__RPJC1\"]")
+	@FindBy(xpath = "//span[contains(@class,'arrowIcon')]")
 	WebElement quantityDropdownBtn;
 	
 	@FindBy(xpath = "(//div[@class=\"MedicineProductCard_list__Wd7VW \"])[1]")
@@ -37,8 +42,26 @@ public class CartPage {
 	@FindBy(xpath = "//span[text()=\"Skip Savings\"]")
 	WebElement skipBtn;
 	
+	@FindBy(xpath = "//div[contains(@class,'deleteIcon')]")
+	WebElement deleteBtn;
+	
+	
 	public void clickOnQuantityDropdown() {
-		quantityDropdownBtn.click();
+
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	        WebElement btn = wait.until(
+	            ExpectedConditions.elementToBeClickable(
+	                By.xpath("//span[contains(@class,'arrowIcon')]")
+	            )
+	        );
+
+	        btn.click();
+
+	    } catch (Exception e) {
+	        System.out.println("Quantity dropdown not found - skipping");
+	    }
 	}
 	
 	public void selectQuantity() {
@@ -63,6 +86,37 @@ public class CartPage {
 	
 	public void proceedToPaymentPage() {
 		proceedBtn.click();
+	}
+	
+	public void clickDeleteBtn() {
+
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+	    WebElement btn = wait.until(
+	        ExpectedConditions.elementToBeClickable(
+	            By.xpath("//div[contains(@class,'deleteIcon')]")
+	        )
+	    );
+
+	    btn.click();
+	}
+	
+	public void confirmDelete() {
+
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	        WebElement removeBtn = wait.until(
+	            ExpectedConditions.elementToBeClickable(
+	                By.xpath("//span[text()='Remove']")
+	            )
+	        );
+
+	        removeBtn.click();
+
+	    } catch (Exception e) {
+	        System.out.println("No confirmation popup");
+	    }
 	}
 	
 	public void skip() {
