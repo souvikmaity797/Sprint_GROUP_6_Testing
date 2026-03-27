@@ -1,0 +1,2540 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 27, 2026 08:31:41 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@apollo247</a><a class="dropdown-item" href="#">@TC_Apollo247_04</a><a class="dropdown-item" href="#">@REQ_Apollo247_05</a><a class="dropdown-item" href="#">@TC_Apollo247_01</a><a class="dropdown-item" href="#">@TC_Apollo247_03</a><a class="dropdown-item" href="#">@REQ_Apollo247_04</a><a class="dropdown-item" href="#">@patient_details</a><a class="dropdown-item" href="#">@appointment</a><a class="dropdown-item" href="#">@REQ_Apollo247_01</a><a class="dropdown-item" href="#">@doctor_filter</a><a class="dropdown-item" href="#">@TC_Apollo247_11</a><a class="dropdown-item" href="#">@doctor_search</a><a class="dropdown-item" href="#">@REQ_Apollo247_02</a><a class="dropdown-item" href="#">@TC_Apollo247_12</a><a class="dropdown-item" href="#">@TC_Apollo247_02</a><a class="dropdown-item" href="#">@TC_Apollo247_10</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Apollo247 Core Functionalities</p>
+            <p class="text-sm">
+              <span>8:31:53 pm</span> / <span>00:09:02:019</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Apollo247 Core Functionalities</h5>
+<span class='badge badge-success'>03.27.2026 8:31:53 pm</span>
+<span class='badge badge-danger'>03.27.2026 8:40:55 pm</span>
+<span class='badge badge-default'>00:09:02:019</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a logged-in user on Apollo247
+I want to search for doctors, apply filters, schedule appointments, and validate patient details
+So that I can manage my healthcare needs effectively</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Search for a doctor by valid name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.performDoctorSearch(java.lang.String)">
+                <span>When the user performs doctor search using "TC01"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyDoctorsDisplayed()">
+                <span>Then relevant doctors should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyDoctorPresent()">
+                <span>And the searched doctor should be present in the results</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Search for doctors by valid specialty</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.performDoctorSearch(java.lang.String)">
+                <span>When the user performs doctor search using "TC02"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifySpecialtyDoctors()">
+                <span>Then doctors related to the specialty should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Search for a doctor with an invalid name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.performDoctorSearch(java.lang.String)">
+                <span>When the user performs doctor search using "TC03"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyNoResult(java.lang.String)">
+                <span>Then a no result message should be displayed for "TC03"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by experience range of 0-5 years</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.searchBeforeFilter(java.lang.String)">
+                <span>Given the user has already searched for doctors using "TC02"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.applyExperienceFilter(java.lang.Integer,java.lang.Integer)">
+                <span>When the user applies experience filter from 0 to 5 years</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyExperienceRange()">
+                <span>Then only doctors within the selected experience range should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>Verify navigation to Appointment Details page from doctor profile</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.searchAndSelectDoctor(java.lang.String)">
+                <span>Given the user has searched and selected a doctor using "TC01"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.scheduleAppointment()">
+                <span>When the user proceeds to schedule an appointment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyAppointmentPage()">
+                <span>Then the appointment details page should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>Validate patient contact number with less than required digits</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.completeAppointmentProcess(java.lang.String)">
+                <span>When the user completes appointment process using "TC11"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyAlert()">
+                <span>Then an appropriate validation alert should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="47"><span class="badge log pass-bg mr-2">Pass</span>Validate patient contact number when left empty</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.completeAppointmentProcess(java.lang.String)">
+                <span>When the user completes appointment process using "TC12"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyAlert()">
+                <span>Then an appropriate validation alert should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="54"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Apollo247 Core Functionalities</p>
+            <p class="text-sm">
+              <span>8:41:06 pm</span> / <span>00:08:16:398</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Apollo247 Core Functionalities</h5>
+<span class='badge badge-success'>03.27.2026 8:41:06 pm</span>
+<span class='badge badge-danger'>03.27.2026 8:49:22 pm</span>
+<span class='badge badge-default'>00:08:16:398</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=54</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a logged-in user on Apollo247
+I want to search for doctors, apply filters, schedule appointments, and validate patient details
+So that I can manage my healthcare needs effectively</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>Search for a doctor by valid name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.performDoctorSearch(java.lang.String)">
+                <span>When the user performs doctor search using "TC01"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyDoctorsDisplayed()">
+                <span>Then relevant doctors should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyDoctorPresent()">
+                <span>And the searched doctor should be present in the results</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>Search for doctors by valid specialty</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.performDoctorSearch(java.lang.String)">
+                <span>When the user performs doctor search using "TC02"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifySpecialtyDoctors()">
+                <span>Then doctors related to the specialty should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="70"><span class="badge log pass-bg mr-2">Pass</span>Search for a doctor with an invalid name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.performDoctorSearch(java.lang.String)">
+                <span>When the user performs doctor search using "TC03"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyNoResult(java.lang.String)">
+                <span>Then a no result message should be displayed for "TC03"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="77"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by experience range of 0-5 years</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.searchBeforeFilter(java.lang.String)">
+                <span>Given the user has already searched for doctors using "TC02"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.applyExperienceFilter(java.lang.Integer,java.lang.Integer)">
+                <span>When the user applies experience filter from 0 to 5 years</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyExperienceRange()">
+                <span>Then only doctors within the selected experience range should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="85"><span class="badge log pass-bg mr-2">Pass</span>Verify navigation to Appointment Details page from doctor profile</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.searchAndSelectDoctor(java.lang.String)">
+                <span>Given the user has searched and selected a doctor using "TC01"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.scheduleAppointment()">
+                <span>When the user proceeds to schedule an appointment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyAppointmentPage()">
+                <span>Then the appointment details page should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>Validate patient contact number with less than required digits</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.completeAppointmentProcess(java.lang.String)">
+                <span>When the user completes appointment process using "TC11"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyAlert()">
+                <span>Then an appropriate validation alert should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="100"><span class="badge log pass-bg mr-2">Pass</span>Validate patient contact number when left empty</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.completeAppointmentProcess(java.lang.String)">
+                <span>When the user completes appointment process using "TC12"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyAlert()">
+                <span>Then an appropriate validation alert should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="107"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Apollo247 Core Functionalities</p>
+            <p class="text-sm">
+              <span>8:49:36 pm</span> / <span>00:08:23:732</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Apollo247 Core Functionalities</h5>
+<span class='badge badge-success'>03.27.2026 8:49:36 pm</span>
+<span class='badge badge-danger'>03.27.2026 8:58:00 pm</span>
+<span class='badge badge-default'>00:08:23:732</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=107</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a logged-in user on Apollo247
+I want to search for doctors, apply filters, schedule appointments, and validate patient details
+So that I can manage my healthcare needs effectively</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="108"><span class="badge log pass-bg mr-2">Pass</span>Search for a doctor by valid name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.performDoctorSearch(java.lang.String)">
+                <span>When the user performs doctor search using "TC01"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyDoctorsDisplayed()">
+                <span>Then relevant doctors should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyDoctorPresent()">
+                <span>And the searched doctor should be present in the results</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="116"><span class="badge log pass-bg mr-2">Pass</span>Search for doctors by valid specialty</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.performDoctorSearch(java.lang.String)">
+                <span>When the user performs doctor search using "TC02"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifySpecialtyDoctors()">
+                <span>Then doctors related to the specialty should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="123"><span class="badge log pass-bg mr-2">Pass</span>Search for a doctor with an invalid name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.performDoctorSearch(java.lang.String)">
+                <span>When the user performs doctor search using "TC03"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyNoResult(java.lang.String)">
+                <span>Then a no result message should be displayed for "TC03"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="130"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by experience range of 0-5 years</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.searchBeforeFilter(java.lang.String)">
+                <span>Given the user has already searched for doctors using "TC02"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.applyExperienceFilter(java.lang.Integer,java.lang.Integer)">
+                <span>When the user applies experience filter from 0 to 5 years</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyExperienceRange()">
+                <span>Then only doctors within the selected experience range should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="138"><span class="badge log pass-bg mr-2">Pass</span>Verify navigation to Appointment Details page from doctor profile</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.searchAndSelectDoctor(java.lang.String)">
+                <span>Given the user has searched and selected a doctor using "TC01"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.scheduleAppointment()">
+                <span>When the user proceeds to schedule an appointment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyAppointmentPage()">
+                <span>Then the appointment details page should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="146"><span class="badge log pass-bg mr-2">Pass</span>Validate patient contact number with less than required digits</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.completeAppointmentProcess(java.lang.String)">
+                <span>When the user completes appointment process using "TC11"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyAlert()">
+                <span>Then an appropriate validation alert should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="153"><span class="badge log pass-bg mr-2">Pass</span>Validate patient contact number when left empty</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.openWebsite()">
+                <span>Given the user has opened the browser and navigated to the Apollo247 website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.login()">
+                <span>And the user is logged in to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.onHomePage()">
+                <span>And the user is on the Apollo247 home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.completeAppointmentProcess(java.lang.String)">
+                <span>When the user completes appointment process using "TC12"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions_doctor_appointment_system.StepDefinitionClass_Doctor_Appointment_System.verifyAlert()">
+                <span>Then an appropriate validation alert should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">16</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>21</span>
+</span>
+<p class="name">@apollo247</p>
+<p class="duration text-sm">21 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@apollo247</h4>
+<span status="pass" class='badge log pass-bg'>21 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:31:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:34:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:35:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:37:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:38:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:39:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:41:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='55'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:42:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='63'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='70'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:44:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='77'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='85'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:47:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='93'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:48:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='100'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:49:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='108'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:50:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='116'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:51:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='123'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:52:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='130'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:54:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='138'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:55:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='146'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:56:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='153'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@TC_Apollo247_04</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_Apollo247_04</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:35:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:44:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='77'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:52:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='130'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@REQ_Apollo247_05</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@REQ_Apollo247_05</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:38:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:39:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:47:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='93'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:48:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='100'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:55:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='146'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:56:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='153'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@TC_Apollo247_01</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_Apollo247_01</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:31:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:41:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='55'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:49:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='108'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@TC_Apollo247_03</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_Apollo247_03</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:34:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='70'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:51:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='123'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@REQ_Apollo247_04</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@REQ_Apollo247_04</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:37:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='85'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:54:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='138'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@patient_details</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@patient_details</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:38:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:39:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:47:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='93'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:48:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='100'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:55:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='146'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:56:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='153'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@appointment</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@appointment</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:37:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='85'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:54:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='138'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+</span>
+<p class="name">@REQ_Apollo247_01</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@REQ_Apollo247_01</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:31:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:34:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:41:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='55'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:42:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='63'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='70'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:49:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='108'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:50:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='116'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:51:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='123'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@doctor_filter</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@doctor_filter</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:35:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:44:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='77'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:52:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='130'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@TC_Apollo247_11</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_Apollo247_11</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:38:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:47:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='93'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:55:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='146'>Validate patient contact number with less than required digits</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number with less than required digits</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+</span>
+<p class="name">@doctor_search</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@doctor_search</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:31:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:34:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:41:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='55'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:42:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='63'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='70'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:49:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='108'>Search for a doctor by valid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor by valid name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:50:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='116'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:51:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='123'>Search for a doctor with an invalid name</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for a doctor with an invalid name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@REQ_Apollo247_02</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@REQ_Apollo247_02</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:35:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:44:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='77'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:52:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='130'>Filter doctors by experience range of 0-5 years</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Filter doctors by experience range of 0-5 years</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@TC_Apollo247_12</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_Apollo247_12</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:39:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:48:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='100'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:56:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='153'>Validate patient contact number when left empty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Validate patient contact number when left empty</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@TC_Apollo247_02</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_Apollo247_02</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:42:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='63'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:50:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='116'>Search for doctors by valid specialty</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Search for doctors by valid specialty</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@TC_Apollo247_10</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_Apollo247_10</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:37:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='54' id='85'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:54:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='138'>Verify navigation to Appointment Details page from doctor profile</a>
+<div class="">
+<span class="badge badge-default">Apollo247 Core Functionalities.Verify navigation to Appointment Details page from doctor profile</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 27, 2026 08:31:41 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 27, 2026 08:58:01 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>3</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>21</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>114</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Apollo247 Core Functionalities":542.019,"Apollo247 Core Functionalities":496.398,"Apollo247 Core Functionalities":503.732
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@apollo247</td>
+<td>21</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_Apollo247_04</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@REQ_Apollo247_05</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_Apollo247_01</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_Apollo247_03</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@REQ_Apollo247_04</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@patient_details</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@appointment</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@REQ_Apollo247_01</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@doctor_filter</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_Apollo247_11</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@doctor_search</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@REQ_Apollo247_02</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_Apollo247_12</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_Apollo247_02</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_Apollo247_10</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 21,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 114,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
