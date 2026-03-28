@@ -63,10 +63,36 @@ public class DoctorsListPage {
 
         List<WebElement> doctors = getWait().until(ExpectedConditions.visibilityOfAllElementsLocatedBy(firstPageDoctors));
 
+//        for (WebElement doctor : doctors) {
+//            try {
+//                WebElement expElement = doctor.findElement(
+//                        By.xpath(".//div[@class='DoctorCard_doctorDetails__mqW6P']//p[contains(.,'Years')]"));
+//                String expText = expElement.getText().trim();
+//
+//                Pattern pattern = Pattern.compile("(\\d+)\\s*Years");
+//                Matcher matcher = pattern.matcher(expText);
+//
+//                if (matcher.find()) {
+//                    experienceList.add(Integer.parseInt(matcher.group(1)));
+//                } else {
+//                    System.out.println("No valid experience number found in text: " + expText);
+//                }
+//            } catch (Exception e) {
+//                System.out.println("Experience not found for a doctor, skipping...");
+//            }
+//        }
+        
         for (WebElement doctor : doctors) {
+
+            // 🔴 THIS IS THE FIX
+            if (!doctor.isDisplayed()) {
+                continue; // skip hidden cards
+            }
+
             try {
                 WebElement expElement = doctor.findElement(
-                        By.xpath(".//div[@class='DoctorCard_doctorDetails__mqW6P']//p[contains(.,'Years')]"));
+                    By.xpath(".//div[contains(@class,'DoctorCard_doctorDetails')]//p[contains(.,'Years')]"));
+
                 String expText = expElement.getText().trim();
 
                 Pattern pattern = Pattern.compile("(\\d+)\\s*Years");
@@ -74,11 +100,10 @@ public class DoctorsListPage {
 
                 if (matcher.find()) {
                     experienceList.add(Integer.parseInt(matcher.group(1)));
-                } else {
-                    System.out.println("No valid experience number found in text: " + expText);
                 }
+
             } catch (Exception e) {
-                System.out.println("Experience not found for a doctor, skipping...");
+                // skip
             }
         }
         return experienceList;

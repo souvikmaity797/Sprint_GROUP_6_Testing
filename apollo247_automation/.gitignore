@@ -1,1 +1,8 @@
-/target/
+# Excel temp files
+~$*.xlsx
+
+# Test reports
+test-output/
+
+# IDE
+.settings/
