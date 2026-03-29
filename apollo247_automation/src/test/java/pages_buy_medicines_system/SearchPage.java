@@ -1,7 +1,7 @@
 package pages_buy_medicines_system;
 
 import java.time.Duration;
-import java.util.List;
+// import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -70,72 +70,90 @@ public class SearchPage {
     }
 
     // Click Add to Cart (handles both product page and listing page)
+//    public void clickOnAddToCart() {
+//
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+//
+//        try {
+//            // CASE 1: Product detail page
+//            WebElement btn = wait.until(ExpectedConditions.elementToBeClickable(
+//                By.xpath("//button[.//span[contains(text(),'Add to Cart')] or contains(.,'Add to Cart')]")
+//            ));
+//
+//            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btn);
+//
+//        } catch (Exception e) {
+//
+//            // CASE 2: Listing page fallback
+//            WebElement btn = wait.until(ExpectedConditions.elementToBeClickable(
+//                By.xpath("(//button[contains(.,'Add to Cart')])[1]")
+//            ));
+//
+//            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btn);
+//        }
+//    }
+    
+//
+    
     public void clickOnAddToCart() {
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-        List<WebElement> addToCart = driver.findElements(
-            By.xpath("//button[contains(.,'Add to Cart')]")
-        );
+        try {
+            // ✅ STEP 1: Wait for page load properly
+            wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.xpath("//body")
+            ));
 
-        if (addToCart.size() > 0) {
+            // ✅ STEP 2: Wait until Add to Cart is PRESENT (NOT clickable yet)
+            WebElement btn = wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.xpath("//span[text()='Add to Cart']")
+            ));
 
-            WebElement btn = wait.until(
-                ExpectedConditions.elementToBeClickable(addToCart.get(0))
-            );
-
-            // Scroll slightly above to avoid sticky header overlap
+            // ✅ STEP 3: Scroll to center (VERY IMPORTANT)
             ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].scrollIntoView(true); window.scrollBy(0, -120);",
-                btn
+                "arguments[0].scrollIntoView({block:'center'});", btn
             );
 
-            // JS click ensures stability when normal click fails
+            Thread.sleep(1000); // small stabilization
+
+            // ✅ STEP 4: Use JS click (bypass overlay issues)
             ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].click();", btn
             );
 
-        } else {
+        } catch (Exception e) {
 
-            // Fallback: add product directly from listing page
-            By addBtn = By.xpath("(//div[contains(@class,'ProductCard')]//button)[1]");
+            System.out.println("Primary Add to Cart failed, trying fallback...");
 
-            WebElement btn = wait.until(
-                ExpectedConditions.elementToBeClickable(addBtn)
-            );
+            // ✅ FALLBACK (listing page)
+            WebElement btn = wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.xpath("(//button[contains(.,'Add to Cart')])[1]")
+            ));
 
             ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].click();", btn
             );
         }
     }
-
     // Navigate to cart page after adding product
     public void clickOnViewCart() {
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 
         By viewCartLocator = By.xpath(
-            "//span[contains(text(),'View Cart')] | //a[contains(@href,'cart')]"
+            "//span[contains(text(),'View Cart')] | //a[contains(@href,'/cart')]"
         );
 
         WebElement viewCart = wait.until(
             ExpectedConditions.visibilityOfElementLocated(viewCartLocator)
         );
 
-        // Scroll to avoid overlay issues
-        ((JavascriptExecutor) driver).executeScript(
-            "arguments[0].scrollIntoView({block:'center'});", viewCart
-        );
+        wait.until(ExpectedConditions.elementToBeClickable(viewCart));
 
-        // Attempt normal click, fallback to JS click
-        try {
-            viewCart.click();
-        } catch (Exception e) {
-            ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].click();", viewCart
-            );
-        }
+        ((JavascriptExecutor) driver).executeScript(
+            "arguments[0].click();", viewCart
+        );
 
         wait.until(ExpectedConditions.urlContains("cart"));
     }

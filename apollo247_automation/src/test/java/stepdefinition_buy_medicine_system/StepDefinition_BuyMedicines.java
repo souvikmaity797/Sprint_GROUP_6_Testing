@@ -55,6 +55,12 @@ public class StepDefinition_BuyMedicines {
     // Fetch medicine name from Excel and perform search
     @When("user searches for medicine from excel row {int}")
     public void search_medicine(int row) {
+    	try {
+			Thread.sleep(7000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         currentMedicine = ExcelUtils.getData(row, 1);
         home.searchMedicine(currentMedicine);
     }
@@ -111,9 +117,20 @@ public class StepDefinition_BuyMedicines {
     // Add product to cart and navigate to cart page
     @When("user adds product to cart")
     public void add_to_cart() {
-        search.clickOnAddToCart();
-        try { Thread.sleep(2000); } catch (Exception e) {}
-        search.clickOnViewCart();
+    	search.clickOnAddToCart();
+
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+    	wait.until(ExpectedConditions.or(
+    	    ExpectedConditions.visibilityOfElementLocated(
+    	        By.xpath("//span[contains(text(),'View Cart')]")
+    	    ),
+    	    ExpectedConditions.visibilityOfElementLocated(
+    	        By.xpath("//a[contains(@href,'cart')]")
+    	    )
+    	));
+
+    	search.clickOnViewCart();
     }
 
     // Verify navigation to cart page

@@ -2,6 +2,7 @@ package hooks_buy_medicine_system;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -16,7 +17,7 @@ public class Hooks {
 
     @Before
     public void setUp() {
-        tlDriver.set(new ChromeDriver());
+        tlDriver.set(new EdgeDriver());
         getDriver().manage().window().maximize();
     }
 
