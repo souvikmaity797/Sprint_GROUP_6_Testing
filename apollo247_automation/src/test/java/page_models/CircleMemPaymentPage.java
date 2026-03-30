@@ -41,8 +41,8 @@ public class CircleMemPaymentPage {
     WebElement expiryDate;
     
     //expiryMonth
-    @FindBy(xpath = "//input[@name='card_exp_month']")
-    WebElement expiryMonth;
+    @FindBy(xpath = "//input[@id='card_exp_year']")
+    WebElement expiryYear;
 
     // CVV
     @FindBy(xpath = "//input[contains(@placeholder,'CVV')]")
@@ -52,9 +52,17 @@ public class CircleMemPaymentPage {
     @FindBy(xpath = "//span[contains(text(),'Pay ')]")
     WebElement payBtn;
     
-    @FindBy(xpath ="//p[contains(text(),'invalid_card_number')]")
-    WebElement errorMsg;
+//    @FindBy(xpath ="//p[contains(text(),'invalid_card_number')]")
+//    WebElement errorMsg;
     
+    
+    //after entering the card and pay
+    @FindBy(xpath ="//button[@id='frn-btn']")
+    WebElement payPLN;
+    
+  
+    @FindBy(xpath ="//h5[contains(text(),'Payment Failed')]")
+    WebElement errorMsg;
 
     // ---------------- ACTION METHODS ----------------
     
@@ -64,6 +72,9 @@ public class CircleMemPaymentPage {
 
 
     
+    public void clickOnPayPLN() {
+    	payPLN.click();
+    }
 
     // Frame 2 - Card Number
     
@@ -103,8 +114,8 @@ public class CircleMemPaymentPage {
     	Thread.sleep(2000);
     	driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='card_exp_year_iframe']")));
     	
-          expiryMonth.clear();
-          expiryMonth.sendKeys(year);
+          expiryYear.clear();
+          expiryYear.sendKeys(year);
           driver.switchTo().defaultContent();
           
       }

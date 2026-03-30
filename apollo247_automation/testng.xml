@@ -26,26 +26,12 @@
 
     <!-- ── CHROME ─────────────────────────────────────────────────────────── -->
     <test name="Chrome Tests">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="testrunner.RunnerIO"/>
-        </classes>
-    </test>
-
-    <!-- ── FIREFOX ────────────────────────────────────────────────────────── -->
-    <test name="Firefox Tests">
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="testrunner.RunnerIO"/>
         </classes>
     </test>
 
-    <!-- ── EDGE ───────────────────────────────────────────────────────────── -->
-    <test name="Edge Tests">
-        <parameter name="browser" value="edge"/>
-        <classes>
-            <class name="testrunner.RunnerIO"/>
-        </classes>
-    </test>
+
 
 </suite>

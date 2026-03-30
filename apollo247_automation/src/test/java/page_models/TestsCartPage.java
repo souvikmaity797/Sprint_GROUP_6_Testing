@@ -26,15 +26,15 @@ public class TestsCartPage {
 
     
     
-  @FindBy(xpath="//span[@class='PatientCartItems_percentDisc__c_03D']")
+  @FindBy(xpath="(//span[contains(text(),'60% off')])[1]")
 		  WebElement discount;
 
 
   
-  @FindBy(xpath="//span[contains(text(),'Lipid Profile Test')]")
+  @FindBy(xpath="(//span[contains(text(),'Lipid Profile')])[1]")
   WebElement cartcontent;
 
-  @FindBy(xpath="//span[@class='PatientCartItems_slashPrice__7VGKn']")
+  @FindBy(xpath="//span[contains(text(),'(₹')]")
   WebElement MRP;
   
     // Coupon Input Box
@@ -63,7 +63,7 @@ public class TestsCartPage {
     WebElement couponcancelBtn;
     
     
-    @FindBy(xpath = " (//div[contains(@class,'PatientCartItems_tileHead')]//div)[2]")
+    @FindBy(xpath = " (//div[contains(text(),'1')])[1]")
     WebElement iteminCart;
     
     

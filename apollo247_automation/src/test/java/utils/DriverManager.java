@@ -32,7 +32,7 @@ public class DriverManager {
     public static void initDriver() {
         // testng.xml passes <parameter name="browser" value="chrome|firefox|edge"/>
         // Surefire picks it up as a system property automatically
-        String browser = System.getProperty("browser", "chrome").trim().toLowerCase();
+        String browser = System.getProperty("browser", "firefox").trim().toLowerCase();
 
         WebDriver driver;
         switch (browser) {

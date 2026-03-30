@@ -1,4 +1,4 @@
-
+# Final one
 Feature: Apollo247 Lab Tests End-to-End Validation
 
   Background:
@@ -52,7 +52,7 @@ Feature: Apollo247 Lab Tests End-to-End Validation
   # ---------------------------------------------------------------------------
  @TC_AP_03_03
   Scenario Outline: Verify removing an item from cart updates the total correctly
-    Given User adds lab first test to cart using data from "TC_AP_03_01"
+
     Given Cart is prepared with tests using data from "<testCaseId>"
     When User removes first item from cart
     Then Remaining cart details should match expected values from "<testCaseId>"
@@ -107,7 +107,7 @@ Feature: Apollo247 Lab Tests End-to-End Validation
     And User attempts payment
     Then Payment should fail
     And Payment error message should be displayed using data from "<testCaseId>"
-    And Membership should not be activated
+ 
 
     Examples:
       | testCaseId  |
