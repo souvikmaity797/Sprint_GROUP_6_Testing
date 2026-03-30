@@ -8,8 +8,12 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/features/apollo.feature",
         glue = "stepdefinitions",
         dryRun=false,
-        plugin = {"pretty", "html:target/report.html"},
-        monochrome = true
+        		 plugin = {
+        		            "pretty",
+        		            "html:target/cucumber-report.html",
+        		            "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+        		    },
+        		 monochrome = true
 )
 public class RunnerIO extends AbstractTestNGCucumberTests {
 	

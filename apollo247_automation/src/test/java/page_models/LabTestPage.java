@@ -4,7 +4,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -37,7 +37,8 @@ public class LabTestPage {
 //    
     
     // add button on search result
-  @FindBy(xpath="//span[contains(text(),'Add')]")
+  @FindBy(xpath="(//span[contains(text(),'Add')])[1]")
+public
   WebElement addButton;
     
 @FindBy(xpath="//li[@class='SearchResult_noResultsFound__srSdT'] ")
@@ -66,20 +67,34 @@ public class LabTestPage {
     
 
     //add patient
-    @FindBy(xpath="(//*[@class='cl dl DiagItemAccordionPatient_checkbox__Rz7Wh '])[1]/*[2]")
+    @FindBy(xpath="(//div[@class='cl dl DiagItemAccordionPatient_checkbox__Rz7Wh ']/input[@type='checkbox'])[1]")
     WebElement addPatient;
     
     
     
     // after add patient -> proceed button 
-  @FindBy(xpath="//button[@class='PatientSelection_nextActionBtn__fLmkL ']")
+  @FindBy(xpath="//button[text()='Next']")
   WebElement nexttoCart;
   
   // select address 
- @FindBy(xpath="//div[@class='AddressSelection_addressRow__SbttX '][1] ")
+ @FindBy(xpath="//p[text()='Maity, Chuadanga - 712617']")
  WebElement selectinvalidAddress;
+ 
+ //quit after selecting invalid address 
+@FindBy(xpath="//img[@alt='Close'] ")
+WebElement quitButton;
+
+//pop up after quit
+@FindBy(xpath="//span[contains(text(),'Exit for now')]")
+WebElement exitPopUp;
+
+
+		 // call for doc
+		@FindBy(xpath="(//img[@alt='close'])[2]")
+		WebElement exitPopUp2;
+
   
-@FindBy(xpath="//p[@class='AddressSelection_fullAddressText__2RLFB AddressSelection_selectedFullAddressText__oa_WJ']")
+@FindBy(xpath="//p[text()='uem, Newtown, New Town - 743502']")
 WebElement selectvalidAddress;
  
  //error msg for unservicable location
@@ -88,7 +103,7 @@ WebElement errorLocation;
 
 
     // review cart button
-  @FindBy(xpath="//button[@class='SlotSelection_nextActionBtn__2OqHn  ']")
+  @FindBy(xpath="//button[text()='Review Cart']")
   WebElement reviewCart;
   
   
@@ -118,32 +133,17 @@ WebElement errorLocation;
  // ADD this import at the top:
 
  // REPLACE searchResultText() with this:
- public List<String> searchResultText() {
-     List<String> list = new ArrayList<>();
-     try {
-         // Re-fetch elements fresh from DOM every time to avoid StaleElementReferenceException
-         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
-             By.xpath("//*[contains(@class, 'QX')]/*[1]")
-         ));
-         List<WebElement> freshResults = driver.findElements(
-             By.xpath("//*[contains(@class, 'QX')]/*[1]")
-         );
-         for (WebElement e : freshResults) {
-             try {
-                 String text = e.getText();
-                 if (text != null && !text.trim().isEmpty()) {
-                     list.add(text.trim());
-                 }
-             } catch (StaleElementReferenceException ex) {
-                 // Element went stale mid-iteration, skip it
-                 System.out.println("Skipping stale element during iteration.");
-             }
-         }
-     } catch (Exception e) {
-         System.out.println("No results found or timeout: " + e.getMessage());
-     }
-     return list;
- }
+    public List<String> searchResultText() {
+        List<String> list = new ArrayList<>();
+       for(int i=1;i<5;i++) {
+               
+    	   list.add(driver.findElement(
+    		        By.xpath("(//*[contains(@class, 'QX')]/*[1])[" + i + "]")
+    		).getText());           
+       }
+        return list;
+       
+    }
  
  //add search item
  
@@ -176,6 +176,7 @@ public String getCartItems() {
  }
  
  
+
  
  
  
@@ -185,7 +186,19 @@ public String getCartItems() {
 
     //for add patient
     public void addPatient() {
-    	addPatient.click();
+    	WebElement checkbox = driver.findElement(By.xpath(
+    		    "(//div[@class='cl dl DiagItemAccordionPatient_checkbox__Rz7Wh ']/input[@type='checkbox'])[1]"
+    		));
+
+    		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+    		// 1) Ensure it becomes checked
+    		js.executeScript(
+    		    "arguments[0].checked = true;" +
+    		    "arguments[0].dispatchEvent(new Event('change', {bubbles: true}));" +
+    		    "arguments[0].dispatchEvent(new Event('click', {bubbles: true}));",
+    		    checkbox
+    		);
     	
     }
     
@@ -198,6 +211,21 @@ public String getCartItems() {
     public void clickSelectInvalidAddress() {
     	selectinvalidAddress.click();
     }
+    
+    
+    public void clickQuitbutton() {
+    	quitButton.click();
+    	}
+    
+    public void clickExitPopUp() {
+    	exitPopUp.click();
+    	}
+    
+    
+    
+    public void clickExitPopUp2() {
+    	exitPopUp2.click();
+    	}
     
     //Address selection
     public void clickSelectValidAddress() {

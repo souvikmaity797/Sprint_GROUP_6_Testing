@@ -6,6 +6,9 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+
 import utils.DriverManager;
 import utils.SessionManager;
 
@@ -58,6 +61,8 @@ public class Hooks {
         }
         // Driver intentionally NOT quit here — reused by next scenario
     }
+    
+ 
 
     // ── Quit browser after ALL scenarios on this thread are done ─────────────
 
