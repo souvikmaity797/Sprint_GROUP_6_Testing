@@ -30,17 +30,13 @@ public class LabTestPage {
     @FindBy(xpath = "//input[@placeholder='Search for lab tests']")
     WebElement searchBox;
     
-    
-    //Search result
-//    @FindBy(xpath="//*[contains(@class, \"QX\")]/*[1]")
-//    List<WebElement> resultlist;
-//    
+
     
     // add button on search result
   @FindBy(xpath="(//span[contains(text(),'Add')])[1]")
-public
-  WebElement addButton;
+public WebElement addButton;
     
+  
 @FindBy(xpath="//li[@class='SearchResult_noResultsFound__srSdT'] ")
   WebElement invalidSearchErr;
   

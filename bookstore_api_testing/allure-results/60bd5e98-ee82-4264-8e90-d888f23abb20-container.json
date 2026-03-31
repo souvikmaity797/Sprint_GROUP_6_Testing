@@ -1,0 +1,1 @@
+{"uuid":"60bd5e98-ee82-4264-8e90-d888f23abb20","name":"tests.BookStoreTest","children":["6c84113c-492f-4db1-a20e-f3de6044b22c"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1774986747672,"stop":1774986748083}],"afters":[],"start":1774986747643,"stop":1774986753473}

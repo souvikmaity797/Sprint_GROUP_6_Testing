@@ -17,14 +17,17 @@ public class DeleteAllBooksTest extends BaseTest {
 //      ExtentTestManager.startTest("Delete All Books");
 
       DeleteBooksRequest req = new DeleteBooksRequest();
-      req.setUserId(AuthSession.userId);
-
+      String userId = AuthSession.userId;
+      
       Response res = given()
               .header("Authorization", "Bearer " + AuthSession.token)
-              .header("Content-Type", "application/json")
-              .body(req)
+              .queryParam("UserId", userId)   
+              .when()
               .delete("/BookStore/v1/Books");
 
+      System.out.println("Status Code: " + res.getStatusCode());
+      System.out.println("TOKEN: " + AuthSession.token);
+      System.out.println("TOKEN: " + AuthSession.userId);
       Assert.assertEquals(res.statusCode(), 204);
 
       ExtentTestManager.test.pass("All books deleted");

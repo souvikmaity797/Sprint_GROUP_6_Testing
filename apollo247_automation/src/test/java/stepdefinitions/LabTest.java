@@ -197,9 +197,9 @@ public class LabTest {
 
     @When("User navigates to cart page")
     public void user_navigates_to_cart_page() throws InterruptedException {
-    	Thread.sleep(15000);
+    	Thread.sleep(10000);
         labTestPage.clickreviewCart();
-    	Thread.sleep(15000);
+    	Thread.sleep(7000);
 
     }
 
@@ -280,7 +280,7 @@ public class LabTest {
     	
         Thread.sleep(10000);
         labTestPage.addPatient();
-       Thread.sleep(10000);
+       Thread.sleep(70000);
         labTestPage.clickNext();
     }
 

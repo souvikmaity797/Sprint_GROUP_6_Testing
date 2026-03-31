@@ -1,452 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-31T23:01:19 IST" name="Suite" finished-at="2026-03-31T23:28:07 IST" duration-ms="1607684">
+  <suite started-at="2026-04-01T00:43:50 IST" name="Default suite" finished-at="2026-04-01T00:50:59 IST" duration-ms="429159">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.RunnerIO@6a2f6f80]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-03-31T23:01:19 IST" name="Chrome" finished-at="2026-03-31T23:10:50 IST" duration-ms="571017">
-      <class name="runnerfile_doctor_appointment_system.RunnerIO">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:01:19 IST" name="setUpClass" finished-at="2026-03-31T23:01:22 IST" duration-ms="2704" status="PASS">
+    <test started-at="2026-04-01T00:43:50 IST" name="Default test" finished-at="2026-04-01T00:50:59 IST" duration-ms="429159">
+      <class name="testrunner.RunnerIO">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.RunnerIO@6a2f6f80]" started-at="2026-04-01T00:43:50 IST" name="setUpClass" finished-at="2026-04-01T00:43:52 IST" duration-ms="1704" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5b4eaf8b]]>
+                <![CDATA[org.testng.TestRunner@662be9f7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:01:22 IST" name="setUp" finished-at="2026-03-31T23:01:30 IST" duration-ms="8153" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.RunnerIO@6a2f6f80]" started-at="2026-04-01T00:43:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-01T00:44:57 IST" duration-ms="65210" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:01:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:03:04 IST" duration-ms="93674" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a doctor by valid name"]]>
+                <![CDATA["Verify lab test search results contain relevant keywords"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
+                <![CDATA["Apollo247 Lab Tests End-to-End Validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:03:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:04:28 IST" duration-ms="84569" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.RunnerIO@6a2f6f80]" started-at="2026-04-01T00:44:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-01T00:45:22 IST" duration-ms="25562" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search for doctors by valid specialty"]]>
+                <![CDATA["Verify search with invalid keyword shows error message"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
+                <![CDATA["Apollo247 Lab Tests End-to-End Validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:04:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:05:39 IST" duration-ms="70414" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.RunnerIO@6a2f6f80]" started-at="2026-04-01T00:45:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-01T00:47:10 IST" duration-ms="107986" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search for a doctor with an invalid name"]]>
+                <![CDATA["Verify lab test added to cart shows correct price, MRP and discount"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
+                <![CDATA["Apollo247 Lab Tests End-to-End Validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:05:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:06:58 IST" duration-ms="79762" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.RunnerIO@6a2f6f80]" started-at="2026-04-01T00:47:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-01T00:47:42 IST" duration-ms="31235" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Filter doctors by experience range of 0-5 years"]]>
+                <![CDATA["Verify removing an item from cart updates the total correctly"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
+                <![CDATA["Apollo247 Lab Tests End-to-End Validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:06:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:08:17 IST" duration-ms="78822" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.RunnerIO@6a2f6f80]" started-at="2026-04-01T00:47:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-01T00:48:23 IST" duration-ms="41345" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify navigation to Appointment Details page from doctor profile"]]>
+                <![CDATA["Verify non-serviceable address blocks booking progress"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
+                <![CDATA["Apollo247 Lab Tests End-to-End Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <img alt="close" src="https://images.apollo247.in/images/icons/ic_white_cross.webp"> is not clickable at point (1490, 636). Other element would receive the click: <button type="button" class="PatientSelection_nextActionBtn__fLmkL PatientSelection_disabledNextActionBtn__eyrPt">...</button>
+  (Session info: MicrosoftEdge=146.0.3856.84)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [be66702b68ab859c8e35eeb939da6b18, clickElement {id=f.ED92345672E8EC12E3D2F464F7D9E4C5.d.2F039759F9E08E2ABD1B1523426A7A30.e.1043}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 25996, ms:edgeOptions: {debuggerAddress: localhost:55340}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\SOUVIK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55340/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (be66702b68ab859c8e35eeb939da6b18)] -> xpath: (//img[@alt='close'])[2]]
+Session ID: be66702b68ab859c8e35eeb939da6b18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img alt="close" src="https://images.apollo247.in/images/icons/ic_white_cross.webp"> is not clickable at point (1490, 636). Other element would receive the click: <button type="button" class="PatientSelection_nextActionBtn__fLmkL PatientSelection_disabledNextActionBtn__eyrPt">...</button>
+  (Session info: MicrosoftEdge=146.0.3856.84)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [be66702b68ab859c8e35eeb939da6b18, clickElement {id=f.ED92345672E8EC12E3D2F464F7D9E4C5.d.2F039759F9E08E2ABD1B1523426A7A30.e.1043}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 25996, ms:edgeOptions: {debuggerAddress: localhost:55340}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\SOUVIK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55340/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (be66702b68ab859c8e35eeb939da6b18)] -> xpath: (//img[@alt='close'])[2]]
+Session ID: be66702b68ab859c8e35eeb939da6b18
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+at page_models.LabTestPage.clickExitPopUp2(LabTestPage.java:227)
+at stepdefinitions.LabTest.user_proceeds_to_booking(LabTest.java:279)
+at ✽.User proceeds to booking(file:///C:/Users/SOUVIK%20MAITY/OneDrive/Desktop/Final_Sprint/Sprint_GROUP_6_Testing/apollo247_automation/src/test/resources/features/apollo.feature:71)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.RunnerIO@6a2f6f80]" started-at="2026-04-01T00:48:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-01T00:49:14 IST" duration-ms="50602" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify invalid coupon code shows error and does not change cart total"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Apollo247 Lab Tests End-to-End Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Exit for now')]"}
+  (Session info: MicrosoftEdge=146.0.3856.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [be66702b68ab859c8e35eeb939da6b18, findElement {value=//span[contains(text(),'Exit for now')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 25996, ms:edgeOptions: {debuggerAddress: localhost:55340}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\SOUVIK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55340/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be66702b68ab859c8e35eeb939da6b18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Exit for now')]"}
+  (Session info: MicrosoftEdge=146.0.3856.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [be66702b68ab859c8e35eeb939da6b18, findElement {value=//span[contains(text(),'Exit for now')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 25996, ms:edgeOptions: {debuggerAddress: localhost:55340}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\SOUVIK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55340/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be66702b68ab859c8e35eeb939da6b18
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+at page_models.LabTestPage.clickExitPopUp(LabTestPage.java:221)
+at stepdefinitions.LabTest.user_is_on_checkout_page(LabTest.java:320)
+at ✽.User is on checkout page(file:///C:/Users/SOUVIK%20MAITY/OneDrive/Desktop/Final_Sprint/Sprint_GROUP_6_Testing/apollo247_automation/src/test/resources/features/apollo.feature:87)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.RunnerIO@6a2f6f80]" started-at="2026-04-01T00:49:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-01T00:50:58 IST" duration-ms="104051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify failed payment does not activate Circle membership"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Apollo247 Lab Tests End-to-End Validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:08:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:09:33 IST" duration-ms="75845" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate patient contact number with less than required digits"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:09:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:10:48 IST" duration-ms="75386" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate patient contact number when left empty"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:10:48 IST" name="tearDown" finished-at="2026-03-31T23:10:49 IST" duration-ms="842" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@6f45df59]" started-at="2026-03-31T23:10:49 IST" name="tearDownClass" finished-at="2026-03-31T23:10:50 IST" duration-ms="645" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.RunnerIO@6a2f6f80]" started-at="2026-04-01T00:50:58 IST" name="tearDownClass" finished-at="2026-04-01T00:50:59 IST" duration-ms="1199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runnerfile_doctor_appointment_system.RunnerIO -->
-    </test> <!-- Chrome -->
-    <test started-at="2026-03-31T23:10:50 IST" name="Firefox" finished-at="2026-03-31T23:19:15 IST" duration-ms="505087">
-      <class name="runnerfile_doctor_appointment_system.RunnerIO">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:10:50 IST" name="setUpClass" finished-at="2026-03-31T23:10:50 IST" duration-ms="27" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@79251dae]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:10:50 IST" name="setUp" finished-at="2026-03-31T23:11:00 IST" duration-ms="9487" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:11:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:12:06 IST" duration-ms="66890" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a doctor by valid name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:12:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:13:21 IST" duration-ms="74775" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for doctors by valid specialty"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:13:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:14:27 IST" duration-ms="65332" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a doctor with an invalid name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:14:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:15:35 IST" duration-ms="68858" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Filter doctors by experience range of 0-5 years"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:15:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:16:47 IST" duration-ms="72073" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify navigation to Appointment Details page from doctor profile"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:16:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:18:03 IST" duration-ms="75659" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate patient contact number with less than required digits"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:18:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:19:13 IST" duration-ms="69424" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate patient contact number when left empty"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:19:13 IST" name="tearDown" finished-at="2026-03-31T23:19:15 IST" duration-ms="2364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@ba54932]" started-at="2026-03-31T23:19:15 IST" name="tearDownClass" finished-at="2026-03-31T23:19:15 IST" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runnerfile_doctor_appointment_system.RunnerIO -->
-    </test> <!-- Firefox -->
-    <test started-at="2026-03-31T23:19:15 IST" name="Edge" finished-at="2026-03-31T23:28:07 IST" duration-ms="531518">
-      <class name="runnerfile_doctor_appointment_system.RunnerIO">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:19:15 IST" name="setUpClass" finished-at="2026-03-31T23:19:15 IST" duration-ms="47" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@381d7867]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:19:15 IST" name="setUp" finished-at="2026-03-31T23:19:20 IST" duration-ms="4509" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:19:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:20:28 IST" duration-ms="68450" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a doctor by valid name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:20:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:21:45 IST" duration-ms="76468" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for doctors by valid specialty"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:21:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:22:52 IST" duration-ms="67213" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a doctor with an invalid name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:22:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:24:04 IST" duration-ms="72277" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Filter doctors by experience range of 0-5 years"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:24:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:25:20 IST" duration-ms="76070" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify navigation to Appointment Details page from doctor profile"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:25:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:26:36 IST" duration-ms="76009" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate patient contact number with less than required digits"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:26:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T23:27:52 IST" duration-ms="76084" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate patient contact number when left empty"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Apollo247 Core Functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:27:52 IST" name="tearDown" finished-at="2026-03-31T23:28:06 IST" duration-ms="14062" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerfile_doctor_appointment_system.RunnerIO@3943a2be]" started-at="2026-03-31T23:28:06 IST" name="tearDownClass" finished-at="2026-03-31T23:28:07 IST" duration-ms="265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runnerfile_doctor_appointment_system.RunnerIO -->
-    </test> <!-- Edge -->
-  </suite> <!-- Suite -->
+      </class> <!-- testrunner.RunnerIO -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

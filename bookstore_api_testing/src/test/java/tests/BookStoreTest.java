@@ -18,7 +18,7 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.startTest("Create User");
 
         UserRequest req = new UserRequest();
-        req.setUserName("xyz");
+        req.setUserName("xma");
         req.setPassword("Password@123");
         Response res = given()
                 .header("Content-Type", "application/json")
@@ -30,6 +30,7 @@ public class BookStoreTest extends BaseTest {
         Assert.assertEquals(res.statusCode(), 201);
 
        AuthSession.userId = res.jsonPath().getString("userID");
+       System.out.println("userId: " + AuthSession.userId);
 
         ExtentTestManager.test.pass("User created: " + AuthSession.userId);
     }
@@ -39,7 +40,7 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.startTest("Generate Token");
 
         TokenRequest req = new TokenRequest();
-        req.setUserName("xyz");
+        req.setUserName("xma");
         req.setPassword("Password@123");
 
         TokenResponse res = given()
@@ -50,6 +51,7 @@ public class BookStoreTest extends BaseTest {
                 .as(TokenResponse.class);
 
         AuthSession.token = res.getToken();
+        System.out.println("TOKEN: " + AuthSession.token);
 
         Assert.assertNotNull(AuthSession.token);
 
@@ -61,7 +63,7 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.startTest("Authorized User");
 
         AuthRequest req = new AuthRequest();
-        req.setUserName("xyz");
+        req.setUserName("xma");
         req.setPassword("Password@123");
 
         Response res = given()
@@ -80,15 +82,19 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.startTest("Delete All Books");
 
         DeleteBooksRequest req = new DeleteBooksRequest();
-        req.setUserId(AuthSession.userId);
-
+        String userId = AuthSession.userId;
+        
         Response res = given()
                 .header("Authorization", "Bearer " + AuthSession.token)
-                .header("Content-Type", "application/json")
-                .body(req)
+                .queryParam("UserId", userId)   
+                .when()
                 .delete("/BookStore/v1/Books");
 
+        System.out.println("Status Code: " + res.getStatusCode());
+        System.out.println("TOKEN: " + AuthSession.token);
+        System.out.println("TOKEN: " + AuthSession.userId);
         Assert.assertEquals(res.statusCode(), 204);
+
 
         ExtentTestManager.test.pass("All books deleted");
     }
