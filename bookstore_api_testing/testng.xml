@@ -3,14 +3,27 @@
        preserve-order="true"
        outputdir="test-output">
 
-  <test name="Ordered Tests" preserve-order="true">
-    <classes>
-      <class name="tests.BookStoreTest"/>
-      <class name="tests.GetUserTest"/>
-      <class name="tests.GetAllBooksTest"/>
-      <class name="tests.AddBooksToUserTest"/>
-      <class name="tests.DeleteUserTest"/>
-    </classes>
-  </test>
+    <listeners>
+        
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        
+        <listener class-name="utils.CustomHtmlReporter"/>
+    </listeners>
+
+    <test name="Ordered Tests" preserve-order="true">
+        <classes>
+
+            <class name="tests.BookStoreTest"/>
+            <class name="tests.AddBooksToUserTest"/>
+            <class name="tests.GetBookTest"/>
+            <class name="tests.UpdateBookTest"/>
+            <class name="tests.DeleteBookTest"/>
+            <class name="tests.GetUserTest"/>
+            <class name="tests.GetAllBooksTest"/>
+            <class name="tests.DeleteAllBooksTest"/>
+            <class name="tests.DeleteUserTest"/>
+
+        </classes>
+    </test>
 
 </suite>

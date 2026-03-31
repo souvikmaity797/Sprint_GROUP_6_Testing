@@ -15,10 +15,19 @@ public class Hooks {
         return tlDriver.get();
     }
 
-    @Before
-    public void setUp() {
-        tlDriver.set(new EdgeDriver());
-        getDriver().manage().window().maximize();
+//    @Before
+//    public void setUp() {
+//
+//        EdgeOptions options = new EdgeOptions();
+//        options.addArguments("--disable-blink-features=AutomationControlled");
+//        options.addArguments("user-data-dir=C:/edge-profile-" + Thread.currentThread().getId());
+//        tlDriver.set(new EdgeDriver(options));
+//        getDriver().manage().window().maximize();
+//    }
+    
+    @Before public void setUp() { 
+    	tlDriver.set(new EdgeDriver()); 
+    	getDriver().manage().window().maximize(); 
     }
 
     @After

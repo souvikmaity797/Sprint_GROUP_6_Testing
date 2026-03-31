@@ -24,6 +24,14 @@ public class HomePage {
         PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
+    
+    public void waitForPageLoad() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(300));
+
+        wait.until(driver -> ((JavascriptExecutor) driver)
+            .executeScript("return document.readyState")
+            .equals("complete"));
+    }
 
     // Close homepage popup using Shadow DOM (Apollo site uses shadow-root for popup)
     public void closePopup() {
@@ -54,7 +62,7 @@ public class HomePage {
     // Navigate to Buy Medicines page and ensure search box is loaded
     public void clickBuyMedicines() {
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(200));
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));
 
@@ -79,7 +87,7 @@ public class HomePage {
     // Perform search operation and wait for results to load
     public void searchMedicine(String medicine) {
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(200));
 
         WebElement searchBox = wait.until(
             ExpectedConditions.elementToBeClickable(
@@ -87,7 +95,7 @@ public class HomePage {
             )
         );
         searchBox.click();
-
+ 
         WebElement input = wait.until(
             ExpectedConditions.elementToBeClickable(
                 By.xpath("//input[contains(@placeholder,'Search')]")
@@ -102,6 +110,10 @@ public class HomePage {
         }
 
         input.sendKeys(Keys.ENTER);
+        waitForPageLoad();
+        wait.until(ExpectedConditions.presenceOfElementLocated(
+        	    By.xpath("//div[contains(@class,'ProductCard')]")
+        	));
 
         try {
             Thread.sleep(2000);

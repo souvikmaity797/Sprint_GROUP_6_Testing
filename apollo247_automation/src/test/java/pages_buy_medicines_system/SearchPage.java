@@ -100,24 +100,24 @@ public class SearchPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         try {
-            // ✅ STEP 1: Wait for page load properly
+            // Wait for page load properly
             wait.until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//body")
             ));
 
-            // ✅ STEP 2: Wait until Add to Cart is PRESENT (NOT clickable yet)
+            // Wait until Add to Cart is PRESENT (NOT clickable yet)
             WebElement btn = wait.until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//span[text()='Add to Cart']")
             ));
 
-            // ✅ STEP 3: Scroll to center (VERY IMPORTANT)
+            // Scroll to center (VERY IMPORTANT)
             ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].scrollIntoView({block:'center'});", btn
             );
 
             Thread.sleep(1000); // small stabilization
 
-            // ✅ STEP 4: Use JS click (bypass overlay issues)
+            // Use JS click (bypass overlay issues)
             ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].click();", btn
             );
@@ -126,7 +126,7 @@ public class SearchPage {
 
             System.out.println("Primary Add to Cart failed, trying fallback...");
 
-            // ✅ FALLBACK (listing page)
+            // FALLBACK (listing page)
             WebElement btn = wait.until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("(//button[contains(.,'Add to Cart')])[1]")
             ));

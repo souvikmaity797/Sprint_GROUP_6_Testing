@@ -1,0 +1,7 @@
+<suite name="Suite" parallel="methods" thread-count="2">
+    <test name="Cucumber Tests">
+        <classes>
+            <class name="runnerfile_buy_medicine_system.RunnerFile_BuyMedicines"/>
+        </classes>
+    </test>
+</suite>
