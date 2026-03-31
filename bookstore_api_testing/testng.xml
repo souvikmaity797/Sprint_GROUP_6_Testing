@@ -1,0 +1,16 @@
+<suite name="BookStore API Suite"
+       parallel="false"
+       preserve-order="true"
+       outputdir="test-output">
+
+  <test name="Ordered Tests" preserve-order="true">
+    <classes>
+      <class name="tests.BookStoreTest"/>
+      <class name="tests.GetUserTest"/>
+      <class name="tests.GetAllBooksTest"/>
+      <class name="tests.AddBooksToUserTest"/>
+      <class name="tests.DeleteUserTest"/>
+    </classes>
+  </test>
+
+</suite>

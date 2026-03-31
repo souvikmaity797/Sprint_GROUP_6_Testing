@@ -4,6 +4,7 @@ import base.BaseTest;
 import io.restassured.response.Response;
 import models.*;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 import utils.ExtentManager;
 import utils.ExtentTestManager;
@@ -12,27 +13,25 @@ import static io.restassured.RestAssured.given;
 
 public class BookStoreTest extends BaseTest {
 
-    String userId;
-    String token;
-
     @Test(priority = 1)
     public void createUser() {
         ExtentTestManager.startTest("Create User");
 
         UserRequest req = new UserRequest();
-        req.setUserName("souvik123");
+        req.setUserName("xyz");
         req.setPassword("Password@123");
-
         Response res = given()
                 .header("Content-Type", "application/json")
+                .header("Accept", "application/json")   // ⭐ REQUIRED
                 .body(req)
                 .post("/Account/v1/User");
 
+
         Assert.assertEquals(res.statusCode(), 201);
 
-        userId = res.jsonPath().getString("userID");
+       AuthSession.userId = res.jsonPath().getString("userID");
 
-        ExtentTestManager.test.pass("User created: " + userId);
+        ExtentTestManager.test.pass("User created: " + AuthSession.userId);
     }
 
     @Test(priority = 2)
@@ -40,18 +39,19 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.startTest("Generate Token");
 
         TokenRequest req = new TokenRequest();
-        req.setUserName("souvik123");
+        req.setUserName("xyz");
         req.setPassword("Password@123");
 
         TokenResponse res = given()
                 .header("Content-Type", "application/json")
+                .header("Accept", "application/json")
                 .body(req)
                 .post("/Account/v1/GenerateToken")
                 .as(TokenResponse.class);
 
-        token = res.getToken();
+        AuthSession.token = res.getToken();
 
-        Assert.assertNotNull(token);
+        Assert.assertNotNull(AuthSession.token);
 
         ExtentTestManager.test.pass("Token generated");
     }
@@ -61,11 +61,12 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.startTest("Authorized User");
 
         AuthRequest req = new AuthRequest();
-        req.setUserName("souvik123");
+        req.setUserName("xyz");
         req.setPassword("Password@123");
 
         Response res = given()
                 .header("Content-Type", "application/json")
+                .header("Accept", "application/json")
                 .body(req)
                 .post("/Account/v1/Authorized");
 
@@ -79,10 +80,10 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.startTest("Delete All Books");
 
         DeleteBooksRequest req = new DeleteBooksRequest();
-        req.setUserId(userId);
+        req.setUserId(AuthSession.userId);
 
         Response res = given()
-                .header("Authorization", "Bearer " + token)
+                .header("Authorization", "Bearer " + AuthSession.token)
                 .header("Content-Type", "application/json")
                 .body(req)
                 .delete("/BookStore/v1/Books");
@@ -92,7 +93,7 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.test.pass("All books deleted");
     }
 
-    @Test
+    @AfterSuite
     public void tearDown() {
         ExtentManager.getInstance().flush();
     }
