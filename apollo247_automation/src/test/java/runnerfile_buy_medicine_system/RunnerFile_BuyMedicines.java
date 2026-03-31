@@ -5,8 +5,8 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        features = "src/test/resources/featurefile",
-        glue = {"stepdefinitions", "hooks"},
+        features = "src/test/java/featurefile_buy_medicine_system",
+        glue = {"stepdefinition_buy_medicine_system", "hooks_buy_medicine_system"},
 //        tags = "@TC_06",
         		plugin = {
         		        "pretty",
