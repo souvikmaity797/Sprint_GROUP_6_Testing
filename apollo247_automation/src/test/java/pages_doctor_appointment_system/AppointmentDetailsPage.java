@@ -14,10 +14,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AppointmentDetailsPage {
 
     WebDriver driver;
+    WebDriverWait wait;
+
+    // -------- Loader locator (the real culprit) --------
+    private By loaderOverlay = By.cssSelector("div[class*='corporateLoading']");
 
     // Constructor
     public AppointmentDetailsPage(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         PageFactory.initElements(driver, this);
     }
 
@@ -39,49 +44,67 @@ public class AppointmentDetailsPage {
 
     By appointmentHeading = By.xpath("//p[text()='Appointment Details']");
 
-    // ----------------- Wait Helper -----------------
-    private WebDriverWait getWait() {
-        return new WebDriverWait(driver, Duration.ofSeconds(10));
+    // ----------------- Core Synchronization -----------------
+
+    private void waitForLoaderToDisappear() {
+        try {
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(loaderOverlay));
+        } catch (Exception ignored) {}
+    }
+
+    private void safeClick(WebElement element) {
+        waitForLoaderToDisappear();
+        wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+    }
+
+    private void safeType(WebElement element, String text) {
+        waitForLoaderToDisappear();
+        wait.until(ExpectedConditions.visibilityOf(element));
+        element.clear();
+        element.sendKeys(text);
     }
 
     // ----------------- Actions -----------------
+
     public boolean isOnAppointmentDetailsPage() {
         try {
-            return getWait().until(ExpectedConditions.visibilityOfElementLocated(appointmentHeading))
-                            .isDisplayed();
+            waitForLoaderToDisappear();
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(appointmentHeading))
+                       .isDisplayed();
         } catch (Exception e) {
             return false;
         }
     }
 
     public void changeClick() {
-        getWait().until(ExpectedConditions.elementToBeClickable(change)).click();
+        safeClick(change);
     }
 
     public void phoneNumberClick() {
-        getWait().until(ExpectedConditions.elementToBeClickable(phoneNumber)).click();
+        safeClick(phoneNumber);
     }
 
     public void enterPhoneNumber(String number) {
-        getWait().until(ExpectedConditions.visibilityOf(phoneNumber)).sendKeys(number);
+        safeType(phoneNumber, number);
     }
 
     public void deletePhoneNumber() {
-        WebElement phone = getWait().until(ExpectedConditions.elementToBeClickable(phoneNumber));
+        waitForLoaderToDisappear();
+        WebElement phone = wait.until(ExpectedConditions.elementToBeClickable(phoneNumber));
         phone.click();
         phone.sendKeys(Keys.chord(Keys.CONTROL, "a"));
         phone.sendKeys(Keys.BACK_SPACE);
     }
 
     public void selectAnotherPatient() {
-        getWait().until(ExpectedConditions.elementToBeClickable(selectPatient)).click();
+        safeClick(selectPatient);
     }
 
     public void proceedClick() {
-        getWait().until(ExpectedConditions.elementToBeClickable(proceedButton)).click();
+        safeClick(proceedButton);
     }
 
     public void confirmAndPayButtonClick() {
-        getWait().until(ExpectedConditions.elementToBeClickable(confirmAndPayButton)).click();
+        safeClick(confirmAndPayButton);
     }
 }
