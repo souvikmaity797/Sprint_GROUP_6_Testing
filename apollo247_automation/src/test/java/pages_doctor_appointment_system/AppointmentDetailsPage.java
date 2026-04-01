@@ -16,7 +16,7 @@ public class AppointmentDetailsPage {
     WebDriver driver;
     WebDriverWait wait;
 
-    // -------- Loader locator (the real culprit) --------
+    // -------- Loader locator--------
     private By loaderOverlay = By.cssSelector("div[class*='corporateLoading']");
 
     // Constructor
