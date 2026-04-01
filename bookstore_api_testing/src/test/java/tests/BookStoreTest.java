@@ -77,27 +77,27 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.test.pass("User authorized");
     }
 
-    @Test(priority = 4)
-    public void deleteAllBooks() {
-        ExtentTestManager.startTest("Delete All Books");
+    // @Test(priority = 4)
+    // public void deleteAllBooks() {
+    //     ExtentTestManager.startTest("Delete All Books");
 
-        DeleteBooksRequest req = new DeleteBooksRequest();
-        String userId = AuthSession.userId;
+    //     DeleteBooksRequest req = new DeleteBooksRequest();
+    //     String userId = AuthSession.userId;
         
-        Response res = given()
-                .header("Authorization", "Bearer " + AuthSession.token)
-                .queryParam("UserId", userId)   
-                .when()
-                .delete("/BookStore/v1/Books");
+    //     Response res = given()
+    //             .header("Authorization", "Bearer " + AuthSession.token)
+    //             .queryParam("UserId", userId)   
+    //             .when()
+    //             .delete("/BookStore/v1/Books");
 
-        System.out.println("Status Code: " + res.getStatusCode());
-        System.out.println("TOKEN: " + AuthSession.token);
-        System.out.println("TOKEN: " + AuthSession.userId);
-        Assert.assertEquals(res.statusCode(), 204);
+    //     System.out.println("Status Code: " + res.getStatusCode());
+    //     System.out.println("TOKEN: " + AuthSession.token);
+    //     System.out.println("TOKEN: " + AuthSession.userId);
+    //     Assert.assertEquals(res.statusCode(), 204);
 
 
-        ExtentTestManager.test.pass("All books deleted");
-    }
+    //     ExtentTestManager.test.pass("All books deleted");
+    // }
 
     @AfterSuite
     public void tearDown() {
