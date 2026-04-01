@@ -73,13 +73,13 @@ public class CustomHtmlReporter implements IReporter {
         sb.append("<!DOCTYPE html><html lang='en'><head>")
           .append("<meta charset='UTF-8'>")
           .append("<meta name='viewport' content='width=device-width,initial-scale=1'>")
-          .append("<title>PetStore API — Test Report</title>")
+          .append("<title>BookStore API — Test Report</title>")
           .append("<style>").append(css()).append("</style>")
           .append("</head><body>");
 
         // Header
         sb.append("<div class='header'>")
-          .append("<h1>🛒 PetStore API — Test Execution Report</h1>")
+          .append("<h1>🛒 BookStore API — Test Execution Report</h1>")
           .append("<p class='meta'>Generated: ").append(timestamp).append("</p>")
           .append("</div>");
 

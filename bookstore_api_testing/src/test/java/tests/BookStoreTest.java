@@ -18,7 +18,7 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.startTest("Create User");
 
         UserRequest req = new UserRequest();
-        req.setUserName("xma");
+        req.setUserName("xmac");
         req.setPassword("Password@123");
         Response res = given()
                 .header("Content-Type", "application/json")
@@ -40,7 +40,7 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.startTest("Generate Token");
 
         TokenRequest req = new TokenRequest();
-        req.setUserName("xma");
+        req.setUserName("xmac");
         req.setPassword("Password@123");
 
         TokenResponse res = given()
@@ -63,7 +63,7 @@ public class BookStoreTest extends BaseTest {
         ExtentTestManager.startTest("Authorized User");
 
         AuthRequest req = new AuthRequest();
-        req.setUserName("xma");
+        req.setUserName("xmac");
         req.setPassword("Password@123");
 
         Response res = given()

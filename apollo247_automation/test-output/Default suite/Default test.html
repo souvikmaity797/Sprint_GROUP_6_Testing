@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 01 00:43:50 IST 2026</td>
+<td>Started on:</td><td>Wed Apr 01 11:46:43 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>429 seconds (429159 ms)</td>
+<tr><td>Total time:</td><td>407 seconds (407335 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,141 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testrunner.RunnerIO.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerIO<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify non-serviceable address blocks booking progress", "Apollo247 Lab Tests End-to-End Validation"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img alt=&quot;close&quot; src=&quot;https://images.apollo247.in/images/icons/ic_white_cross.webp&quot;&gt; is not clickable at point (1490, 636). Other element would receive the click: &lt;button type=&quot;button&quot; class=&quot;PatientSelection_nextActionBtn__fLmkL PatientSelection_disabledNextActionBtn__eyrPt&quot;&gt;...&lt;/button&gt;
-  (Session info: MicrosoftEdge=146.0.3856.84)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [be66702b68ab859c8e35eeb939da6b18, clickElement {id=f.ED92345672E8EC12E3D2F464F7D9E4C5.d.2F039759F9E08E2ABD1B1523426A7A30.e.1043}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 25996, ms:edgeOptions: {debuggerAddress: localhost:55340}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\SOUVIK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55340/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (be66702b68ab859c8e35eeb939da6b18)] -&gt; xpath: (//img[@alt=&apos;close&apos;])[2]]
-Session ID: be66702b68ab859c8e35eeb939da6b18
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at page_models.LabTestPage.clickExitPopUp2(LabTestPage.java:227)
-	at stepdefinitions.LabTest.user_proceeds_to_booking(LabTest.java:279)
-	at ✽.User proceeds to booking(file:///C:/Users/SOUVIK%20MAITY/OneDrive/Desktop/Final_Sprint/Sprint_GROUP_6_Testing/apollo247_automation/src/test/resources/features/apollo.feature:71)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1338074614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1338074614'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img alt=&quot;close&quot; src=&quot;https://images.apollo247.in/images/icons/ic_white_cross.webp&quot;&gt; is not clickable at point (1490, 636). Other element would receive the click: &lt;button type=&quot;button&quot; class=&quot;PatientSelection_nextActionBtn__fLmkL PatientSelection_disabledNextActionBtn__eyrPt&quot;&gt;...&lt;/button&gt;
-  (Session info: MicrosoftEdge=146.0.3856.84)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [be66702b68ab859c8e35eeb939da6b18, clickElement {id=f.ED92345672E8EC12E3D2F464F7D9E4C5.d.2F039759F9E08E2ABD1B1523426A7A30.e.1043}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 25996, ms:edgeOptions: {debuggerAddress: localhost:55340}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\SOUVIK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55340/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (be66702b68ab859c8e35eeb939da6b18)] -&gt; xpath: (//img[@alt=&apos;close&apos;])[2]]
-Session ID: be66702b68ab859c8e35eeb939da6b18
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at page_models.LabTestPage.clickExitPopUp2(LabTestPage.java:227)
-	at stepdefinitions.LabTest.user_proceeds_to_booking(LabTest.java:279)
-	at ✽.User proceeds to booking(file:///C:/Users/SOUVIK%20MAITY/OneDrive/Desktop/Final_Sprint/Sprint_GROUP_6_Testing/apollo247_automation/src/test/resources/features/apollo.feature:71)
-</pre></div></td>
-<td>41</td>
-<td>testrunner.RunnerIO@6a2f6f80</td></tr>
-<tr>
-<td title='testrunner.RunnerIO.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerIO<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify invalid coupon code shows error and does not change cart total", "Apollo247 Lab Tests End-to-End Validation"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Exit for now&apos;)]&quot;}
-  (Session info: MicrosoftEdge=146.0.3856.84)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [be66702b68ab859c8e35eeb939da6b18, findElement {value=//span[contains(text(),&apos;Exit for now&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 25996, ms:edgeOptions: {debuggerAddress: localhost:55340}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\SOUVIK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55340/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be66702b68ab859c8e35eeb939da6b18
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at page_models.LabTestPage.clickExitPopUp(LabTestPage.java:221)
-	at stepdefinitions.LabTest.user_is_on_checkout_page(LabTest.java:320)
-	at ✽.User is on checkout page(file:///C:/Users/SOUVIK%20MAITY/OneDrive/Desktop/Final_Sprint/Sprint_GROUP_6_Testing/apollo247_automation/src/test/resources/features/apollo.feature:87)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2000802630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2000802630'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Exit for now&apos;)]&quot;}
-  (Session info: MicrosoftEdge=146.0.3856.84)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [be66702b68ab859c8e35eeb939da6b18, findElement {value=//span[contains(text(),&apos;Exit for now&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 25996, ms:edgeOptions: {debuggerAddress: localhost:55340}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\SOUVIK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55340/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be66702b68ab859c8e35eeb939da6b18
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at page_models.LabTestPage.clickExitPopUp(LabTestPage.java:221)
-	at stepdefinitions.LabTest.user_is_on_checkout_page(LabTest.java:320)
-	at ✽.User is on checkout page(file:///C:/Users/SOUVIK%20MAITY/OneDrive/Desktop/Final_Sprint/Sprint_GROUP_6_Testing/apollo247_automation/src/test/resources/features/apollo.feature:87)
-</pre></div></td>
-<td>50</td>
-<td>testrunner.RunnerIO@6a2f6f80</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -211,30 +76,40 @@ Session ID: be66702b68ab859c8e35eeb939da6b18
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testrunner.RunnerIO.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerIO<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify failed payment does not activate Circle membership", "Apollo247 Lab Tests End-to-End Validation"</td>
+<td title='runnerfile_buy_medicine_system.RunnerFile_BuyMedicines.runScenario()'><b>runScenario</b><br>Test class: runnerfile_buy_medicine_system.RunnerFile_BuyMedicines<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_06 Verify remove from cart", "Apollo247 End-to-End Automation"</td>
 <td></td>
-<td>104</td>
-<td>testrunner.RunnerIO@6a2f6f80</td></tr>
+<td>79</td>
+<td>runnerfile_buy_medicine_system.RunnerFile_BuyMedicines@6a2f6f80</td></tr>
 <tr>
-<td title='testrunner.RunnerIO.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerIO<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify lab test search results contain relevant keywords", "Apollo247 Lab Tests End-to-End Validation"</td>
+<td title='runnerfile_buy_medicine_system.RunnerFile_BuyMedicines.runScenario()'><b>runScenario</b><br>Test class: runnerfile_buy_medicine_system.RunnerFile_BuyMedicines<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_05 Verify quantity increase", "Apollo247 End-to-End Automation"</td>
 <td></td>
-<td>65</td>
-<td>testrunner.RunnerIO@6a2f6f80</td></tr>
+<td>57</td>
+<td>runnerfile_buy_medicine_system.RunnerFile_BuyMedicines@6a2f6f80</td></tr>
 <tr>
-<td title='testrunner.RunnerIO.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerIO<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify lab test added to cart shows correct price, MRP and discount", "Apollo247 Lab Tests End-to-End Validation"</td>
+<td title='runnerfile_buy_medicine_system.RunnerFile_BuyMedicines.runScenario()'><b>runScenario</b><br>Test class: runnerfile_buy_medicine_system.RunnerFile_BuyMedicines<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_03 Verify empty search", "Apollo247 End-to-End Automation"</td>
 <td></td>
-<td>107</td>
-<td>testrunner.RunnerIO@6a2f6f80</td></tr>
+<td>37</td>
+<td>runnerfile_buy_medicine_system.RunnerFile_BuyMedicines@6a2f6f80</td></tr>
 <tr>
-<td title='testrunner.RunnerIO.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerIO<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify removing an item from cart updates the total correctly", "Apollo247 Lab Tests End-to-End Validation"</td>
+<td title='runnerfile_buy_medicine_system.RunnerFile_BuyMedicines.runScenario()'><b>runScenario</b><br>Test class: runnerfile_buy_medicine_system.RunnerFile_BuyMedicines<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_01 Verify valid medicine search", "Apollo247 End-to-End Automation"</td>
 <td></td>
-<td>31</td>
-<td>testrunner.RunnerIO@6a2f6f80</td></tr>
+<td>85</td>
+<td>runnerfile_buy_medicine_system.RunnerFile_BuyMedicines@6a2f6f80</td></tr>
 <tr>
-<td title='testrunner.RunnerIO.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerIO<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search with invalid keyword shows error message", "Apollo247 Lab Tests End-to-End Validation"</td>
+<td title='runnerfile_buy_medicine_system.RunnerFile_BuyMedicines.runScenario()'><b>runScenario</b><br>Test class: runnerfile_buy_medicine_system.RunnerFile_BuyMedicines<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_02 Verify invalid medicine search", "Apollo247 End-to-End Automation"</td>
 <td></td>
-<td>25</td>
-<td>testrunner.RunnerIO@6a2f6f80</td></tr>
+<td>44</td>
+<td>runnerfile_buy_medicine_system.RunnerFile_BuyMedicines@6a2f6f80</td></tr>
+<tr>
+<td title='runnerfile_buy_medicine_system.RunnerFile_BuyMedicines.runScenario()'><b>runScenario</b><br>Test class: runnerfile_buy_medicine_system.RunnerFile_BuyMedicines<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_11 Verify filter functionality", "Apollo247 End-to-End Automation"</td>
+<td></td>
+<td>48</td>
+<td>runnerfile_buy_medicine_system.RunnerFile_BuyMedicines@6a2f6f80</td></tr>
+<tr>
+<td title='runnerfile_buy_medicine_system.RunnerFile_BuyMedicines.runScenario()'><b>runScenario</b><br>Test class: runnerfile_buy_medicine_system.RunnerFile_BuyMedicines<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_04 Verify add to cart", "Apollo247 End-to-End Automation"</td>
+<td></td>
+<td>50</td>
+<td>runnerfile_buy_medicine_system.RunnerFile_BuyMedicines@6a2f6f80</td></tr>
 </table><p>
 </body>
 </html>

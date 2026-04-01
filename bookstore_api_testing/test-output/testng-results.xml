@@ -1,37 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-01T01:39:49 IST" name="Default suite" finished-at="2026-04-01T01:40:01 IST" duration-ms="11569">
+  <suite started-at="2026-04-01T12:16:37 IST" name="BookStore API Suite" finished-at="2026-04-01T12:17:04 IST" duration-ms="27346">
     <groups>
     </groups>
-    <test started-at="2026-04-01T01:39:49 IST" name="Default test" finished-at="2026-04-01T01:40:01 IST" duration-ms="11569">
-      <class name="tests.BookStoreTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookStoreTest@5fb759d6]" started-at="2026-04-01T01:39:49 IST" name="setup" finished-at="2026-04-01T01:39:50 IST" duration-ms="888" status="PASS">
+    <test started-at="2026-04-01T12:16:37 IST" name="Ordered Tests" finished-at="2026-04-01T12:17:04 IST" duration-ms="27346">
+      <class name="tests.AddBooksToUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AddBooksToUserTest@5e7cd6cc]" started-at="2026-04-01T12:16:52 IST" name="setup" finished-at="2026-04-01T12:16:52 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createUser()[pri:1, instance:tests.BookStoreTest@5fb759d6]" started-at="2026-04-01T01:39:50 IST" name="createUser" finished-at="2026-04-01T01:39:56 IST" duration-ms="5802" status="PASS">
+        <test-method signature="addBooks()[pri:0, instance:tests.AddBooksToUserTest@5e7cd6cc]" started-at="2026-04-01T12:16:52 IST" name="addBooks" finished-at="2026-04-01T12:16:53 IST" duration-ms="1013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBooks -->
+      </class> <!-- tests.AddBooksToUserTest -->
+      <class name="tests.UpdateBookTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UpdateBookTest@d554c5f]" started-at="2026-04-01T12:16:54 IST" name="setup" finished-at="2026-04-01T12:16:54 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateBook()[pri:0, instance:tests.UpdateBookTest@d554c5f]" started-at="2026-04-01T12:16:54 IST" name="updateBook" finished-at="2026-04-01T12:16:55 IST" duration-ms="1099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBook -->
+      </class> <!-- tests.UpdateBookTest -->
+      <class name="tests.DeleteBookTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DeleteBookTest@2dfaea86]" started-at="2026-04-01T12:16:55 IST" name="setup" finished-at="2026-04-01T12:16:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="deleteBook()[pri:0, instance:tests.DeleteBookTest@2dfaea86]" started-at="2026-04-01T12:16:55 IST" name="deleteBook" finished-at="2026-04-01T12:16:56 IST" duration-ms="1015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBook -->
+      </class> <!-- tests.DeleteBookTest -->
+      <class name="tests.BookStoreTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookStoreTest@65f8f5ae]" started-at="2026-04-01T12:16:37 IST" name="setup" finished-at="2026-04-01T12:16:39 IST" duration-ms="1659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createUser()[pri:1, instance:tests.BookStoreTest@65f8f5ae]" started-at="2026-04-01T12:16:39 IST" name="createUser" finished-at="2026-04-01T12:16:49 IST" duration-ms="10230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method signature="generateToken()[pri:2, instance:tests.BookStoreTest@5fb759d6]" started-at="2026-04-01T01:39:56 IST" name="generateToken" finished-at="2026-04-01T01:39:58 IST" duration-ms="1761" status="PASS">
+        <test-method signature="generateToken()[pri:2, instance:tests.BookStoreTest@65f8f5ae]" started-at="2026-04-01T12:16:49 IST" name="generateToken" finished-at="2026-04-01T12:16:51 IST" duration-ms="2016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateToken -->
-        <test-method signature="authorizedUser()[pri:3, instance:tests.BookStoreTest@5fb759d6]" started-at="2026-04-01T01:39:58 IST" name="authorizedUser" finished-at="2026-04-01T01:39:59 IST" duration-ms="1462" status="PASS">
+        <test-method signature="authorizedUser()[pri:3, instance:tests.BookStoreTest@65f8f5ae]" started-at="2026-04-01T12:16:51 IST" name="authorizedUser" finished-at="2026-04-01T12:16:52 IST" duration-ms="908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorizedUser -->
-        <test-method signature="deleteAllBooks()[pri:4, instance:tests.BookStoreTest@5fb759d6]" started-at="2026-04-01T01:39:59 IST" name="deleteAllBooks" finished-at="2026-04-01T01:40:01 IST" duration-ms="1488" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteAllBooks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BookStoreTest@5fb759d6]" started-at="2026-04-01T01:40:01 IST" name="tearDown" finished-at="2026-04-01T01:40:01 IST" duration-ms="438" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BookStoreTest@65f8f5ae]" started-at="2026-04-01T12:17:05 IST" name="tearDown" finished-at="2026-04-01T12:17:05 IST" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.BookStoreTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="tests.GetUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.GetUserTest@15888343]" started-at="2026-04-01T12:16:56 IST" name="setup" finished-at="2026-04-01T12:16:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getUser()[pri:0, instance:tests.GetUserTest@15888343]" started-at="2026-04-01T12:16:56 IST" name="getUser" finished-at="2026-04-01T12:16:58 IST" duration-ms="1639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUser -->
+      </class> <!-- tests.GetUserTest -->
+      <class name="tests.GetBookTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.GetBookTest@68c9d179]" started-at="2026-04-01T12:16:53 IST" name="setup" finished-at="2026-04-01T12:16:53 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getBook()[pri:0, instance:tests.GetBookTest@68c9d179]" started-at="2026-04-01T12:16:53 IST" name="getBook" finished-at="2026-04-01T12:16:54 IST" duration-ms="823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBook -->
+      </class> <!-- tests.GetBookTest -->
+      <class name="tests.DeleteAllBooksTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DeleteAllBooksTest@14fc5f04]" started-at="2026-04-01T12:17:01 IST" name="setup" finished-at="2026-04-01T12:17:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="deleteAllBooks()[pri:0, instance:tests.DeleteAllBooksTest@14fc5f04]" started-at="2026-04-01T12:17:01 IST" name="deleteAllBooks" finished-at="2026-04-01T12:17:03 IST" duration-ms="2382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAllBooks -->
+      </class> <!-- tests.DeleteAllBooksTest -->
+      <class name="tests.DeleteUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DeleteUserTest@6e2829c7]" started-at="2026-04-01T12:17:03 IST" name="setup" finished-at="2026-04-01T12:17:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="deleteUser()[pri:0, instance:tests.DeleteUserTest@6e2829c7]" started-at="2026-04-01T12:17:03 IST" name="deleteUser" finished-at="2026-04-01T12:17:04 IST" duration-ms="1147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- tests.DeleteUserTest -->
+      <class name="tests.GetAllBooksTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.GetAllBooksTest@33ecda92]" started-at="2026-04-01T12:16:58 IST" name="setup" finished-at="2026-04-01T12:16:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getAllBooks()[pri:0, instance:tests.GetAllBooksTest@33ecda92]" started-at="2026-04-01T12:16:58 IST" name="getAllBooks" finished-at="2026-04-01T12:17:01 IST" duration-ms="2967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllBooks -->
+      </class> <!-- tests.GetAllBooksTest -->
+    </test> <!-- Ordered Tests -->
+  </suite> <!-- BookStore API Suite -->
 </testng-results>

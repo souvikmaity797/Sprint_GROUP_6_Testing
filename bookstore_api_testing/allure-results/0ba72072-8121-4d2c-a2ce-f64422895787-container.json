@@ -1,0 +1,1 @@
+{"uuid":"0ba72072-8121-4d2c-a2ce-f64422895787","name":"BookStore API Suite","children":["b34d7e00-879d-4f7a-acf3-e0c79c78907a"],"befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1775026025023,"stop":1775026025765}],"start":1775025997532,"stop":1775026025768}
