@@ -84,7 +84,6 @@ public class DoctorsListPage {
         
         for (WebElement doctor : doctors) {
 
-            // 🔴 THIS IS THE FIX
             if (!doctor.isDisplayed()) {
                 continue; // skip hidden cards
             }
@@ -124,7 +123,7 @@ public class DoctorsListPage {
         return false;
     }
 
-    // Optional filters if needed
+ 
     public void applyDentistFilter() {
         WebElement filter = getWait().until(ExpectedConditions.elementToBeClickable(dentistFilter));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", filter);
